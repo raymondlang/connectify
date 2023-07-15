@@ -5,13 +5,14 @@ import cors from "cors";
 import dotenv from "dotenv";
 import multer from "multer";
 import morgan from "morgan";
+import helmet from "helmet";
 import path from "path";
 import { fileURLToPath } from "url";
-import { register } from "./controller/register.js";
+import { register } from "./controllers/auth.js";
 import authRoutes from "./routes/auth.js";
 
 // CONFIGURATIONS
-const __filname = fileURLToPath(import.meta.url);
+const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 dotenv.config();
 const app = express();
