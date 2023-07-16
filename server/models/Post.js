@@ -14,18 +14,16 @@ const postSchema = mongoose.Schema(
       type: String,
       required: true,
     },
-
     location: String,
     description: String,
     picturePath: String,
     userPicturePath: String,
-
     likes: {
       type: Map,
       of: Boolean,
     },
     comments: {
-      types: Array,
+      type: Array,
       default: [],
     },
   },
@@ -33,4 +31,5 @@ const postSchema = mongoose.Schema(
 );
 
 const Post = mongoose.model("Post", postSchema);
+
 export default Post;
