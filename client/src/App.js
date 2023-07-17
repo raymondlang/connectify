@@ -7,7 +7,6 @@ import { useSelector } from "react-redux";
 import { CssBaseline, ThemeProvider } from "@mui/material";
 import { createTheme } from "@mui/material";
 import { themeSettings } from "theme";
-import { Login } from "@mui/icons-material";
 
 const App = () => {
   const mode = useSelector((state) => state.mode);
