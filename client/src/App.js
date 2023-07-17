@@ -7,6 +7,7 @@ import { useSelector } from "react-redux";
 import { CssBaseline, ThemeProvider } from "@mui/material";
 import { createTheme } from "@mui/material";
 import { themeSettings } from "theme";
+import ProfilePage from "scenes/profilePage";
 
 const App = () => {
   const mode = useSelector((state) => state.mode);
@@ -24,10 +25,10 @@ const App = () => {
               path="/home"
               element={isAuth ? <HomePage /> : <Navigate to="/" />}
             />
-            {/* <Route
-              path="/profile/:userId"
+            <Route
+              path="/home"
               element={isAuth ? <ProfilePage /> : <Navigate to="/" />}
-            /> */}
+            />
           </Routes>
         </ThemeProvider>
       </BrowserRouter>
