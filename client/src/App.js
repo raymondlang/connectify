@@ -26,7 +26,7 @@ const App = () => {
               element={isAuth ? <HomePage /> : <Navigate to="/" />}
             />
             <Route
-              path="/profile"
+              path="/profile/:userId"
               element={isAuth ? <ProfilePage /> : <Navigate to="/" />}
             />
           </Routes>
