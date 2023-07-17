@@ -38,6 +38,7 @@ const MyPostWidget = ({ picturePath }) => {
   const medium = palette.neutral.medium;
 
   const handlePost = async () => {
+    console.log("hello");
     const formData = new FormData();
     formData.append("userId", _id);
     formData.append("description", post);
