@@ -4,7 +4,7 @@ import {
   LocationOnOutlined,
   WorkOutlineOutlined,
 } from "@mui/icons-material";
-import { Box, Typography, Divider, useTheme } from "@mui/material";
+import { Box, Typography, Divider, useTheme, Link } from "@mui/material";
 import UserImage from "components/UserImage";
 import FlexBetween from "components/FlexBetween";
 import WidgetWrapper from "components/WidgetWrapper";
@@ -123,7 +123,7 @@ const UserWidget = ({ userId, picturePath }) => {
             <img src="../assets/twitter.png" alt="twitter" />
             <Box>
               <Typography color={main} fontWeight="500">
-                Twitter
+                <Link href="https://twitter.com/raythedataguy">Twitter</Link>
               </Typography>
               <Typography color={medium}>Social Network</Typography>
             </Box>
@@ -136,7 +136,7 @@ const UserWidget = ({ userId, picturePath }) => {
             <img src="../assets/linkedin.png" alt="linkedin" />
             <Box>
               <Typography color={main} fontWeight="500">
-                Linkedin
+                <Link href="https://linkedin.com/in/raymondlang">Linkedin</Link>
               </Typography>
               <Typography color={medium}>Network Platform</Typography>
             </Box>
