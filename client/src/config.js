@@ -1,6 +1,6 @@
 // config.js
 const API_BASE_URLS = {
-  production: "https://connectify-server-65oz.onrender.com/",
+  production: "https://connectify-server-65oz.onrender.com",
   development: "http://localhost:3002",
 };
 
