@@ -1,4 +1,5 @@
 import { Box, useMediaQuery } from "@mui/material";
+import { baseUrl } from "config";
 import { API_BASE_URLS } from "config";
 import { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
@@ -16,12 +17,7 @@ const ProfilePage = () => {
   const isNonMobileScreens = useMediaQuery("(min-width:1000px)");
 
   const getUser = async () => {
-    const baseUrl =
-      process.env.NODE_ENV === "production"
-        ? API_BASE_URLS.production
-        : API_BASE_URLS.development;
-
-    const response = await fetch(`${baseUrl}/${userId}`, {
+    const response = await fetch(`${baseUrl}/users/${userId}`, {
       method: "GET",
       headers: { Authorization: `Bearer ${token}` },
     });
