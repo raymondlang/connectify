@@ -47,7 +47,7 @@ const initialValuesLogin = {
   password: "",
 };
 
-const Form = ({ apiBaseUrl }) => {
+const Form = () => {
   console.log(baseUrl);
   const [pageType, setPageType] = useState("login");
   const { palette } = useTheme();
@@ -65,7 +65,7 @@ const Form = ({ apiBaseUrl }) => {
     }
     formData.append("picturePath", values.picture.name);
 
-    const savedUserResponse = await fetch(`${apiBaseUrl}/auth/register`, {
+    const savedUserResponse = await fetch(`${baseUrl}/auth/register`, {
       method: "POST",
       body: formData,
     });
@@ -78,7 +78,7 @@ const Form = ({ apiBaseUrl }) => {
   };
 
   const login = async (values, onSubmitProps) => {
-    const loggedInResponse = await fetch(`${apiBaseUrl}/auth/login`, {
+    const loggedInResponse = await fetch(`${baseUrl}/auth/login`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(values),

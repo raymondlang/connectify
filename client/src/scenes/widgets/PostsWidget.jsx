@@ -4,7 +4,7 @@ import { setPosts } from "state";
 import PostWidget from "./PostWidget";
 import { baseUrl } from "config";
 
-const PostsWidget = ({ userId, isProfile = false, apiBaseUrl }) => {
+const PostsWidget = ({ userId, isProfile = false }) => {
   const dispatch = useDispatch();
   const posts = useSelector((state) => state.posts);
   const token = useSelector((state) => state.token);
@@ -19,7 +19,7 @@ const PostsWidget = ({ userId, isProfile = false, apiBaseUrl }) => {
   };
 
   const getUserPosts = async () => {
-    const response = await fetch(`${apiBaseUrl}/posts/${userId}/posts`, {
+    const response = await fetch(`${baseUrl}/posts/${userId}/posts`, {
       method: "GET",
       headers: { Authorization: `Bearer ${token}` },
     });
