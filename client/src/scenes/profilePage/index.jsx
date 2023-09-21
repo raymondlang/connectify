@@ -1,6 +1,5 @@
 import { Box, useMediaQuery } from "@mui/material";
 import { baseUrl } from "config";
-import { API_BASE_URLS } from "config";
 import { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 import { useParams } from "react-router-dom";

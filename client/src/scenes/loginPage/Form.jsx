@@ -48,7 +48,6 @@ const initialValuesLogin = {
 };
 
 const Form = () => {
-  console.log(baseUrl);
   const [pageType, setPageType] = useState("login");
   const { palette } = useTheme();
   const dispatch = useDispatch();

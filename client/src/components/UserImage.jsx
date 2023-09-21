@@ -1,8 +1,6 @@
 import { Box } from "@mui/material";
 import { baseUrl } from "config";
 
-console.log(baseUrl);
-
 const UserImage = ({ image, size = "60px", apiBaseUrl }) => {
   return (
     <Box width={size} height={size}>
