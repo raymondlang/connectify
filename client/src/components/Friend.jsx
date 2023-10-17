@@ -28,7 +28,7 @@ const Friend = ({ friendId, name, subtitle, userPicturePath }) => {
         ? API_BASE_URLS.production
         : API_BASE_URLS.development;
 
-    const response = await fetch(`${baseUrl}/${_id}/${friendId}`, {
+    const response = await fetch(`${baseUrl}/users/${_id}/${friendId}`, {
       method: "PATCH",
       headers: {
         Authorization: `Bearer ${token}`,

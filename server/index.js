@@ -52,11 +52,11 @@ app.use("/auth", authRoutes);
 app.use("/users", userRoutes);
 app.use("/posts", postRoutes);
 
-// CATCH ALL TO DIRECT REQUESTS TO HTML
-app.get("*", (req, res) => {
-  const indexPath = path.join(__dirname, "../client/public/index.html");
-  res.sendFile(indexPath);
-});
+// // CATCH ALL TO DIRECT REQUESTS TO HTML
+// app.get("*", (req, res) => {
+//   const indexPath = path.join(__dirname, "../client/public/index.html");
+//   res.sendFile(indexPath);
+// });
 
 /* MONGOOSE SETUP */
 const PORT = process.env.PORT || 6001;
