@@ -16,11 +16,13 @@ const ProfilePage = () => {
   const isNonMobileScreens = useMediaQuery("(min-width:1000px)");
 
   const getUser = async () => {
-    console.log(baseUrl);
+    console.log("Fetching user data for userId:", userId);
+    console.log("Base URL:", baseUrl);
     const response = await fetch(`${baseUrl}/users/${userId}`, {
       method: "GET",
       headers: { Authorization: `Bearer ${token}` },
     });
+    console.log("API Response:", response);
     const data = await response.json();
     setUser(data);
   };
