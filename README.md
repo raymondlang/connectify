@@ -1,4 +1,4 @@
-ByteBud is a full stack social media application that allows users to share posts and interact with friends.
+Connectify is a full stack social media application that allows users to share posts and interact with friends.
 
 [Connectify's Live Site](https://connectify-fcem.onrender.com/)
 
