@@ -1,6 +1,6 @@
 ByteBud is a full stack social media application that allows users to share posts and interact with friends.
 
-[Click here to view connectify's Live Site](https://connectify-fcem.onrender.com/)
+[Connectify's Live Site](https://connectify-fcem.onrender.com/)
 
 ![connectify_screenshot](https://github.com/raymondlang/connectify/assets/16345938/1f1f1ae4-3618-4701-8d77-c267a427d2dd)
 
@@ -29,14 +29,13 @@ Implemented React Dropzone to enable seamless and user-friendly file uploads, en
 
 ## Demo User Implementation:
 * Feel free to test the site features through clicking the "Demo User" button which will directly log you in
-* There are exactly TWO different guest logins built for users looking to test the real-time messaging capabilities of ByteBud
 
 ## Sign up a User:
 * You will be able to sign up and automatically be redirected to the logged in page
 * There are validations for signing up such as username length requirements, valid email address, password length, etc
-* Passwords must be matching when entered twice or the signup button will be disabled
 * Friendly reminders will display and signup will be blocked if fields are not properly filled out
 
+![connectify sign up](https://github.com/raymondlang/connectify/assets/16345938/a304848e-0796-46bf-9d8f-ce4a7a7319b7)
 
 ## User Login and Authentication:
 
@@ -44,31 +43,18 @@ Implemented React Dropzone to enable seamless and user-friendly file uploads, en
 * If there are no matching credentials an error message is displayed
 * Login button is disabled if there are null fields or if the amount of characters entered is not within the acceptable range
 
+## Upload Photos with Posts:
 
-## Live Messaging Between ByteBud Clients:
+* Using react-dropzone, you're able to upload photos along with your post
+* On server-side, utitlzied multer, node.js middleware for handling ```multipart/form-data```
 
-* You are able to send messages to other ByteBud clients as long as they are within the same server and channel
-* You must be logged in to use the live messaging feature
+![connectify photo upload](https://github.com/raymondlang/connectify/assets/16345938/4e969304-47ac-4caa-8f07-540f87c8a058)
 
-![bytebud messaging](https://github.com/raymondlang/bytebud/assets/16345938/6fef27c3-423c-4d0e-9ad7-e3959ddaf8da)
-
-
-## Create a Server
-* Users are able to create a server and add their friends to a server
-
-![bytebud create server](https://github.com/raymondlang/bytebud/assets/16345938/299e854b-cf8e-4966-8319-733b215af633)
-
-## Create a Channel
-* Create a channel for your friends by topic or interest
-
-![bytebud create channel](https://github.com/raymondlang/bytebud/assets/16345938/2bfd8bb2-beac-4736-81ec-3c40ca8e5e17)
-
-## React to Messages with Emojis
+## Add Friends
 
 * Users are able to react to messages with emojis
 * Users can see each other's reactions
 
-![bytebud emoji reactions](https://github.com/raymondlang/bytebud/assets/16345938/54dcf2f6-89e0-49f8-80dc-a514b1d984d3)
 
 ## Features Coming Soon:
 
