@@ -37,6 +37,12 @@ Implemented React Dropzone to enable seamless and user-friendly file uploads, en
 
 ![connectify sign up](https://github.com/raymondlang/connectify/assets/16345938/a304848e-0796-46bf-9d8f-ce4a7a7319b7)
 
+## User Login and Authentication:
+
+* You are able to login as long as your credentials are stored within the database (hashed)
+* If there are no matching credentials an error message is displayed
+* Login button is disabled if there are null fields or if the amount of characters entered is not within the acceptable range
+
 ## Add Friends
 
 * Users are able to both add and delete other users as friends
@@ -44,11 +50,11 @@ Implemented React Dropzone to enable seamless and user-friendly file uploads, en
 
 ![connectify add friend](https://github.com/raymondlang/connectify/assets/16345938/67d532b5-274b-4c74-9d52-15fd51dc88b5)
 
-## User Login and Authentication:
+## Toggle Light / Dark Mode
 
-* You are able to login as long as your credentials are stored within the database (hashed)
-* If there are no matching credentials an error message is displayed
-* Login button is disabled if there are null fields or if the amount of characters entered is not within the acceptable range
+* Created 2 MUI color themes to support the global toggle for light and dark mode for user's preference
+  
+![connectify dark mode](https://github.com/raymondlang/connectify/assets/16345938/246185ea-5b73-41a2-ac60-fbf63293e53f)
 
 ## Upload Photos with Posts:
 
@@ -56,7 +62,6 @@ Implemented React Dropzone to enable seamless and user-friendly file uploads, en
 * On server-side, utitlzied multer, node.js middleware for handling ```multipart/form-data```
 
 ![connectify photo upload](https://github.com/raymondlang/connectify/assets/16345938/4e969304-47ac-4caa-8f07-540f87c8a058)
-
 
 ## Features Coming Soon:
 
