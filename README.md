@@ -31,18 +31,19 @@ Implemented React Dropzone to enable seamless and user-friendly file uploads, en
 ## Demo User Implementation:
 * Feel free to test the site features through clicking the "Demo User" button which will directly log you in
 
+## User Login, Authentication, and Conditional Login/Register Rendering:
+* You are able to login as long as your credentials are stored within the database (hashed)
+* If there are no matching credentials an error message is displayed
+* Login vs register page depending on isLogin state
+
+![connectify demo](https://github.com/raymondlang/connectify/assets/16345938/fcc14ecb-4ff9-42af-b18f-8b1c2e62595d)
+
 ## Sign up a User:
 * You will be able to sign up and automatically be redirected to the logged in page
 * There are validations for signing up such as username length requirements, valid email address, password length, etc
 * Friendly reminders will display and signup will be blocked if fields are not properly filled out
 
 ![connectify sign up](https://github.com/raymondlang/connectify/assets/16345938/a304848e-0796-46bf-9d8f-ce4a7a7319b7)
-
-## User Login and Authentication:
-
-* You are able to login as long as your credentials are stored within the database (hashed)
-* If there are no matching credentials an error message is displayed
-* Login button is disabled if there are null fields or if the amount of characters entered is not within the acceptable range
 
 ## Add Friends
 
