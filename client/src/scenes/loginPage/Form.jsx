@@ -257,9 +257,11 @@ const Form = () => {
                   "&:hover": { color: palette.primary.main },
                 }}
                 onClick={() => {
-                  setFieldValue("email", "raymundo@gmail.com");
-                  setFieldValue("password", "churros123");
-                  login(values);
+                  const demoUserValues = {
+                    email: "raymundo@gmail.com",
+                    password: "churros123",
+                  };
+                  login(demoUserValues);
                 }}
               >
                 DEMO USER
