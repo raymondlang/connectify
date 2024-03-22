@@ -245,6 +245,26 @@ const Form = () => {
             >
               {isLogin ? "LOGIN" : "REGISTER"}
             </Button>
+            {isLogin && (
+              <Button
+                fullWidth
+                type="submit"
+                sx={{
+                  m: "0 0 2rem",
+                  p: "1rem",
+                  backgroundColor: palette.primary.main,
+                  color: palette.background.alt,
+                  "&:hover": { color: palette.primary.main },
+                }}
+                onClick={() => {
+                  setFieldValue("email", "raymundo@gmail.com");
+                  setFieldValue("password", "churros123");
+                  login(values);
+                }}
+              >
+                DEMO USER
+              </Button>
+            )}
             <Typography
               onClick={() => {
                 setPageType(isLogin ? "register" : "login");
